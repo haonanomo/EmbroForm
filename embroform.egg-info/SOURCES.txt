@@ -1,9 +1,0 @@
-pyproject.toml
-embroform/__init__.py
-embroform.egg-info/PKG-INFO
-embroform.egg-info/SOURCES.txt
-embroform.egg-info/dependency_links.txt
-embroform.egg-info/requires.txt
-embroform.egg-info/top_level.txt
-embroform/src/layout.py
-embroform/src/preprocess.py
