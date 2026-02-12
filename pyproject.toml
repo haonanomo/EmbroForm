@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embroform"
+version = "0.1.0"
+description = "EmbroForm"
+requires-python = ">=3.7"
+dependencies = [
+  "numpy",
+  "trimesh",
+  "networkx",
+  "shapely",
+  "matplotlib",
+  "reportlab",
+  "svglib",
+  "ezdxf",
+]
+
+[tool.setuptools]
+packages = ["embroform", "embroform.src"]
