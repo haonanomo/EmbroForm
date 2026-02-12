@@ -5,6 +5,7 @@ EmbroForm: Digital Fabrication of Soft Freeform Objects with Machine Embroidered
 
 ## Install the package
 All required Python dependencies are included in this project configuration and can be installed with a single command:
+
 `pip install -e .`
 
 ## External Libraries
