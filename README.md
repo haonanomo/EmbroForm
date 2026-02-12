@@ -12,7 +12,13 @@ The preprocessing stage of this project depends on three external algorithms.
 Executable files and their required dependencies are already included in this repository, so manual installation is typically not necessary.
 
 However, if you encounter version conflicts or environment-related issues during preprocessing, please refer to the official repositories of the following three libraries:
-- [DevelopApp][developapp] — piecewise developable approximation.
 
+- [EvoDevelop][evodevelop] — evolutionary optimization for developable surface approximation.
+- [PP][pp] — parameterization pipeline for developable surface processing.
+- **Note:** PP depends on the Pardiso linear solver. Using the Pardiso backend requires obtaining a valid license from the official Pardiso project website.
+- [DevelopApp][developapp] — piecewise developable mesh approximation toolkit.
+
+[evodevelop]: https://github.com/mmoolee/EvoDevelop
+[pp]: https://github.com/ChunyangYe/PP
 [developapp]: https://github.com/USTC-GCL-F/DevelopApp
 
