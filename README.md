@@ -6,7 +6,12 @@ EmbroForm: Digital Fabrication of Soft Freeform Objects with Machine Embroidered
 ## Install the package
 All required Python dependencies are included in this project configuration and can be installed with a single command:
 
-`pip install -e .`
+```
+pip install -e .
+```
+
+The main entry point of the pipeline is `scripts/run_pipeline.py`, which runs the full layout and routing process.
+
 
 ## External Libraries
 The preprocessing stage of this project depends on three external algorithms.
