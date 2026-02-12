@@ -7,12 +7,9 @@ from embroform.src.pointset import (
     build_pointset,
     export_svg_with_stitch_vectors_mm,
 )
+from embroform.src.preprocess import preprocess
 from embroform.src.splice import run_splicing
 from embroform.src.path import run_routing
-
-
-
-
 
 
 def parse_args():
@@ -21,7 +18,6 @@ def parse_args():
     ap.add_argument("--obj_name", type=str, default="Bir.obj")
     ap.add_argument("--radius", type=float, default=0.05)
 
-    # pointset exports
     ap.add_argument("--export_pointset", default=True)
     ap.add_argument("--pointset_w_mm", type=float, default=410.0)
     ap.add_argument("--pointset_h_mm", type=float, default=200.0)
@@ -43,7 +39,7 @@ def main():
     radius = args.radius
 
     # STEP 0: preprocess input mesh
-    # preprocess(root_dir=root_dir, obj_name=args.obj_name)
+    preprocess(root_dir=root_dir, obj_name=args.obj_name)
 
     # STEP 1: layout optimization
     best_layout, best_choice, adj_graph_3d, adj_graph_2d, G, patches, patch_faces, contours_raw = build_layout(root_dir=root_dir)
